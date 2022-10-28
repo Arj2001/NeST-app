@@ -2,3 +2,10 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.div-center{
+    text-align: -webkit-center; 
+    text-align: -moz-center;
+}
+.my-15{
+    margin: 1.5rem 0 1.5rem 0 ;
+}

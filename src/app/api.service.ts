@@ -14,6 +14,12 @@ export class ApiService {
   authSec=(data:any)=>{
       return this.http.post("http://localhost:8080/authSec",data)
   }
+  addEmp=(data:any)=>{
+      return this.http.post("http://localhost:8080/addEmp",data)
+  }
+  addSec=(data:any)=>{
+      return this.http.post("http://localhost:8080/addSec",data)
+  }
 
 
 }

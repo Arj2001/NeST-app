@@ -14,6 +14,10 @@ import { HttpClientModule } from "@angular/common/http";
 import { AdminComponent } from './admin/admin.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { TestcaseComponent } from './testcase/testcase.component';
+import { ViewEmpComponent } from './view-emp/view-emp.component';
+
 
 const addRoutes:Routes = [
   {
@@ -22,6 +26,9 @@ const addRoutes:Routes = [
   {
     path:"",component:LoginComponent
   },
+  {
+    path:"test",component:TestcaseComponent
+  }
 ]
 
 @NgModule({
@@ -29,7 +36,9 @@ const addRoutes:Routes = [
     AppComponent,
     LoginComponent,
     AdminComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    TestcaseComponent,
+    ViewEmpComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +50,8 @@ const addRoutes:Routes = [
     MatInputModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(addRoutes)
+    RouterModule.forRoot(addRoutes),
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
