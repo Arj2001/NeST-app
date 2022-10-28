@@ -17,6 +17,7 @@ import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { TestcaseComponent } from './testcase/testcase.component';
 import { ViewEmpComponent } from './view-emp/view-emp.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 const addRoutes:Routes = [
@@ -28,6 +29,9 @@ const addRoutes:Routes = [
   },
   {
     path:"test",component:TestcaseComponent
+  },
+  {
+    path:"viewEmp",component:ViewEmpComponent
   }
 ]
 
@@ -51,7 +55,8 @@ const addRoutes:Routes = [
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(addRoutes),
-    MatToolbarModule
+    MatToolbarModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -20,6 +20,13 @@ export class ApiService {
   addSec=(data:any)=>{
       return this.http.post("http://localhost:8080/addSec",data)
   }
+  viewEmp=()=>{
+      return this.http.get("http://localhost:8080/viewEmp")
+  }
+  deleteEmp=(data:any)=>{
+    return this.http.post("http://localhost:8080/deleteEmp",data)
+  }
+
 
 
 }
