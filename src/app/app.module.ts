@@ -11,11 +11,25 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
+import { AdminComponent } from './admin/admin.component';
+import { RouterModule, Routes } from '@angular/router';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+
+const addRoutes:Routes = [
+  {
+    path:"admin",component:AdminComponent
+  },
+  {
+    path:"",component:LoginComponent
+  },
+]
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    AdminComponent,
+    AdminNavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +40,8 @@ import { HttpClientModule } from "@angular/common/http";
     MatTabsModule,
     MatInputModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(addRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
