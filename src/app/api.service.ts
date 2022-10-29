@@ -23,10 +23,15 @@ export class ApiService {
   viewEmp=()=>{
       return this.http.get("http://localhost:8080/viewEmp")
   }
+  searchEmp=(data:any)=>{
+      return this.http.post("http://localhost:8080/searchEmp",data)
+  }
   deleteEmp=(data:any)=>{
     return this.http.post("http://localhost:8080/deleteEmp",data)
   }
-
+  editEmp=(data:any)=>{
+    return this.http.post("http://localhost:8080/updateEmp",data)
+  }
 
 
 }

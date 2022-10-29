@@ -18,6 +18,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { TestcaseComponent } from './testcase/testcase.component';
 import { ViewEmpComponent } from './view-emp/view-emp.component';
 import {MatTableModule} from '@angular/material/table';
+import { SearchEmpComponent } from './search-emp/search-emp.component';
 
 
 const addRoutes:Routes = [
@@ -32,6 +33,8 @@ const addRoutes:Routes = [
   },
   {
     path:"viewEmp",component:ViewEmpComponent
+  },{
+    path:"searchEmp",component:SearchEmpComponent
   }
 ]
 
@@ -42,7 +45,8 @@ const addRoutes:Routes = [
     AdminComponent,
     AdminNavbarComponent,
     TestcaseComponent,
-    ViewEmpComponent
+    ViewEmpComponent,
+    SearchEmpComponent
   ],
   imports: [
     BrowserModule,
