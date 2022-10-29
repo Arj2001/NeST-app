@@ -20,6 +20,7 @@ import { ViewEmpComponent } from './view-emp/view-emp.component';
 import {MatTableModule} from '@angular/material/table';
 import { SearchEmpComponent } from './search-emp/search-emp.component';
 import { AddSecComponent } from './add-sec/add-sec.component';
+import { ViewSecComponent } from './view-sec/view-sec.component';
 
 
 const addRoutes:Routes = [
@@ -38,6 +39,8 @@ const addRoutes:Routes = [
     path:"searchEmp",component:SearchEmpComponent
   },{
     path:"addSec",component:AddSecComponent
+  },{
+    path:"viewSec",component:ViewSecComponent
   }
 ]
 
@@ -50,7 +53,8 @@ const addRoutes:Routes = [
     TestcaseComponent,
     ViewEmpComponent,
     SearchEmpComponent,
-    AddSecComponent
+    AddSecComponent,
+    ViewSecComponent
   ],
   imports: [
     BrowserModule,
