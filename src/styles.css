@@ -2,3 +2,30 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.div-center{
+    text-align: -webkit-center; 
+    text-align: -moz-center;
+}
+.my-15{
+    margin: 1.5rem 0 1.5rem 0 ;
+}
+.example-full-width{
+    width: 100%;
+}
+.center-page{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.mt-50{
+    margin-top: 5rem !important;
+    font-size: xx-large !important;
+}
+.example-card {
+    max-width: 500px;
+  }
+.example-form {
+    min-width: 150px;
+    max-width: 100%;
+    width: 100%;
+  }

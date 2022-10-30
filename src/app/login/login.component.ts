@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
   onAdminLogin=()=>{
     if(this.adminEmail == "admin" && this.adminPassword == "admin"){
       alert("Succesfull")
+      localStorage.setItem("user","admin")
       this.myRouter.navigate(["/admin"])
     }else{
       alert("Invalid credtionals")
@@ -40,7 +41,7 @@ export class LoginComponent implements OnInit {
          alert("success") 
          localStorage.setItem("emp_id",resp[0].id)
          console.log(localStorage.getItem("emp_id"));
-         this.myRouter.navigate(["/employee"])
+         this.myRouter.navigate(["/empdash"])
         }
       }
     )

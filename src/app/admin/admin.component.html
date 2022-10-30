@@ -1,0 +1,48 @@
+<app-admin-navbar></app-admin-navbar>
+<div class="div-center my-15">
+    <mat-card class="example-card">
+        <mat-card-content>
+
+
+
+            <mat-form-field class="example-full-width mt" appearance="outline">
+                <mat-label>Name</mat-label>
+                <input type="Name" matInput name="name" [(ngModel)]="name" placeholder="Ex. name@email.com">
+            </mat-form-field>
+            <mat-form-field class="example-full-width " appearance="outline">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput name="email" [(ngModel)]="email" placeholder="Ex. name@email.com">
+            </mat-form-field>
+            <mat-form-field class="example-full-width " appearance="outline">
+                <mat-label>Age</mat-label>
+                <input type="number" matInput name="age" [(ngModel)]="age" placeholder="Ex. name@email.com">
+            </mat-form-field>
+            <mat-form-field class="example-full-width " appearance="outline">
+                <mat-label>Address</mat-label>
+                <textarea matInput name="address" [(ngModel)]="address" placeholder="Ex. name@email.com"></textarea>
+            </mat-form-field>
+            <mat-form-field class="example-full-width " appearance="outline">
+                <mat-label>Phone</mat-label>
+                <input type="number" matInput name="phone" [(ngModel)]="phone" placeholder="Ex. name@email.com">
+            </mat-form-field>
+            <mat-form-field class="example-full-width " appearance="outline">
+                <mat-label>Salary</mat-label>
+                <input type="number" matInput name="salary" [(ngModel)]="salary" placeholder="Ex. name@email.com">
+            </mat-form-field>
+            <mat-form-field class="example-full-width " appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput name="password" [(ngModel)]="password" placeholder="Ex. name@email.com">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Confirm Password</mat-label>
+                <input matInput type="password" placeholder="Ex. 123456789">
+            </mat-form-field>
+            <button mat-raised-button color="warn" (click)="onAddEmp()">SignUp</button>
+
+
+
+
+        </mat-card-content>
+    </mat-card>
+</div>

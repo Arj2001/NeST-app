@@ -1,0 +1,5 @@
+<p>testcase works!</p>
+<label for="#msg">Write the message</label><br>
+<br>
+<input type="text" id="msg" name="msg" [(ngModel)]="msg"><br><br>
+<button type="submit" (click)="submit()" [disabled]="msg == null">Submit</button>
