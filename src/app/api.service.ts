@@ -29,11 +29,17 @@ export class ApiService {
   searchEmp=(data:any)=>{
       return this.http.post("http://localhost:8080/searchEmp",data)
   }
+  searchSec=(data:any)=>{
+      return this.http.post("http://localhost:8080/searchSec",data)
+  }
   deleteEmp=(data:any)=>{
     return this.http.post("http://localhost:8080/deleteEmp",data)
   }
   editEmp=(data:any)=>{
     return this.http.post("http://localhost:8080/updateEmp",data)
+  }
+  editSec=(data:any)=>{
+    return this.http.post("http://localhost:8080/updateSec",data)
   }
   deleteSec=(data:any)=>{
     return this.http.post("http://localhost:8080/deleteSec",data)
