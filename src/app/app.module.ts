@@ -28,6 +28,7 @@ import { SearchSecComponent } from './search-sec/search-sec.component';
 import { EmpdashComponent } from './emplogin/empdash/empdash.component';
 import { EmpNavbarComponent } from './emplogin/emp-navbar/emp-navbar.component';
 import { EmpApplyleaveComponent } from './emplogin/emp-applyleave/emp-applyleave.component';
+import { EmpLeaveStatusComponent } from './emplogin/emp-leave-status/emp-leave-status.component';
 
 
 
@@ -59,7 +60,9 @@ const addRoutes:Routes = [
     path:"empdash",component:EmpdashComponent
   },{
     path:"applyLeave",component:EmpApplyleaveComponent
-  },
+  },{
+    path:"leaveStatus",component:EmpLeaveStatusComponent
+  }
 ]
 
 @NgModule({
@@ -78,7 +81,8 @@ const addRoutes:Routes = [
     SearchSecComponent,
     EmpdashComponent,
     EmpNavbarComponent,
-    EmpApplyleaveComponent
+    EmpApplyleaveComponent,
+    EmpLeaveStatusComponent
   ],
   imports: [
     BrowserModule,
