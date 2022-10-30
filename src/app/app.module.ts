@@ -25,6 +25,9 @@ import { ViewLeaveComponent } from './view-leave/view-leave.component';
 import {MatSelectModule} from '@angular/material/select';
 import { ViewLogComponent } from './view-log/view-log.component';
 import { SearchSecComponent } from './search-sec/search-sec.component';
+import { EmpdashComponent } from './emplogin/empdash/empdash.component';
+import { EmpNavbarComponent } from './emplogin/emp-navbar/emp-navbar.component';
+import { EmpApplyleaveComponent } from './emplogin/emp-applyleave/emp-applyleave.component';
 
 
 
@@ -52,7 +55,11 @@ const addRoutes:Routes = [
     path:"searchSec",component:SearchSecComponent
   },{
     path:"log",component:ViewLogComponent
-  }
+  },{
+    path:"empdash",component:EmpdashComponent
+  },{
+    path:"applyLeave",component:EmpApplyleaveComponent
+  },
 ]
 
 @NgModule({
@@ -68,7 +75,10 @@ const addRoutes:Routes = [
     ViewSecComponent,
     ViewLeaveComponent,
     ViewLogComponent,
-    SearchSecComponent
+    SearchSecComponent,
+    EmpdashComponent,
+    EmpNavbarComponent,
+    EmpApplyleaveComponent
   ],
   imports: [
     BrowserModule,

@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
          alert("success") 
          localStorage.setItem("emp_id",resp[0].id)
          console.log(localStorage.getItem("emp_id"));
-         this.myRouter.navigate(["/employee"])
+         this.myRouter.navigate(["/empdash"])
         }
       }
     )

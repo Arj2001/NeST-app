@@ -1,0 +1,33 @@
+<app-emp-navbar></app-emp-navbar>
+
+<div class="div-center my-15">
+    <mat-card class="example-card">
+        <mat-card-content>
+
+            <h1>Apply for leave</h1>
+
+            <mat-form-field class="example-full-width mt" appearance="outline">
+                <mat-label>Select Leave Type</mat-label>
+                <mat-select [(ngModel)]="type" name="type">
+                    <mat-option value="Sick Leave">Sick Leave</mat-option>
+                    <mat-option value="Casul Leave">Casual Leave</mat-option>
+                    <mat-option value="Loss Of Pay">Loss Of Pay</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="example-full-width mt" appearance="outline">
+                <mat-label>Description</mat-label>
+                <textarea matInput name="description" id="" [(ngModel)]="description"></textarea>
+            </mat-form-field>
+            <mat-form-field class="example-full-width mt" appearance="outline">
+                <mat-label>Select Date for taking leave</mat-label>
+                <input type="date" matInput name="name" [(ngModel)]="leaveDate" >
+            </mat-form-field>
+
+            <button mat-raised-button color="warn" (click)="onAddLeave()">Apply</button>
+
+
+
+
+        </mat-card-content>
+    </mat-card>
+</div>
