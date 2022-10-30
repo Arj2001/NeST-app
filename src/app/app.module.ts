@@ -21,6 +21,9 @@ import {MatTableModule} from '@angular/material/table';
 import { SearchEmpComponent } from './search-emp/search-emp.component';
 import { AddSecComponent } from './add-sec/add-sec.component';
 import { ViewSecComponent } from './view-sec/view-sec.component';
+import { ViewLeaveComponent } from './view-leave/view-leave.component';
+import {MatSelectModule} from '@angular/material/select';
+
 
 
 const addRoutes:Routes = [
@@ -41,6 +44,8 @@ const addRoutes:Routes = [
     path:"addSec",component:AddSecComponent
   },{
     path:"viewSec",component:ViewSecComponent
+  },{
+    path:"leave",component:ViewLeaveComponent
   }
 ]
 
@@ -54,7 +59,8 @@ const addRoutes:Routes = [
     ViewEmpComponent,
     SearchEmpComponent,
     AddSecComponent,
-    ViewSecComponent
+    ViewSecComponent,
+    ViewLeaveComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +74,8 @@ const addRoutes:Routes = [
     HttpClientModule,
     RouterModule.forRoot(addRoutes),
     MatToolbarModule,
-    MatTableModule
+    MatTableModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

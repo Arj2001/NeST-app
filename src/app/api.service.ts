@@ -38,5 +38,10 @@ export class ApiService {
   deleteSec=(data:any)=>{
     return this.http.post("http://localhost:8080/viewSec",data)
   }
-
+  viewLeave=()=>{
+    return this.http.get("http://localhost:8080/viewAllLeaves")
+  }
+  updateLeaveStatus=(data:any)=>{
+    return this.http.post("http://localhost:8080/leaveStatus",data)
+  }
 }
