@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
   onAdminLogin=()=>{
     if(this.adminEmail == "admin" && this.adminPassword == "admin"){
       alert("Succesfull")
+      localStorage.setItem("user","admin")
       this.myRouter.navigate(["/admin"])
     }else{
       alert("Invalid credtionals")

@@ -23,6 +23,7 @@ import { AddSecComponent } from './add-sec/add-sec.component';
 import { ViewSecComponent } from './view-sec/view-sec.component';
 import { ViewLeaveComponent } from './view-leave/view-leave.component';
 import {MatSelectModule} from '@angular/material/select';
+import { ViewLogComponent } from './view-log/view-log.component';
 
 
 
@@ -60,7 +61,8 @@ const addRoutes:Routes = [
     SearchEmpComponent,
     AddSecComponent,
     ViewSecComponent,
-    ViewLeaveComponent
+    ViewLeaveComponent,
+    ViewLogComponent
   ],
   imports: [
     BrowserModule,
