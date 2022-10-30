@@ -50,6 +50,8 @@ const addRoutes:Routes = [
     path:"leave",component:ViewLeaveComponent
   },{
     path:"searchSec",component:SearchSecComponent
+  },{
+    path:"log",component:ViewLogComponent
   }
 ]
 

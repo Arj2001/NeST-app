@@ -50,4 +50,8 @@ export class ApiService {
   updateLeaveStatus=(data:any)=>{
     return this.http.post("http://localhost:8080/leaveStatus",data)
   }
+  viewLog=()=>{
+    return this.http.get("http://localhost:8080/viewAllLog")
+  }
+
 }
