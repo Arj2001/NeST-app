@@ -29,6 +29,7 @@ import { EmpdashComponent } from './emplogin/empdash/empdash.component';
 import { EmpNavbarComponent } from './emplogin/emp-navbar/emp-navbar.component';
 import { EmpApplyleaveComponent } from './emplogin/emp-applyleave/emp-applyleave.component';
 import { EmpLeaveStatusComponent } from './emplogin/emp-leave-status/emp-leave-status.component';
+import { EmpLogComponent } from './emplogin/emp-log/emp-log.component';
 
 
 
@@ -62,6 +63,8 @@ const addRoutes:Routes = [
     path:"applyLeave",component:EmpApplyleaveComponent
   },{
     path:"leaveStatus",component:EmpLeaveStatusComponent
+  },{
+    path:"viewLogById",component:EmpLogComponent
   }
 ]
 
@@ -82,7 +85,8 @@ const addRoutes:Routes = [
     EmpdashComponent,
     EmpNavbarComponent,
     EmpApplyleaveComponent,
-    EmpLeaveStatusComponent
+    EmpLeaveStatusComponent,
+    EmpLogComponent
   ],
   imports: [
     BrowserModule,
