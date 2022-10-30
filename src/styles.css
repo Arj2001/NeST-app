@@ -29,3 +29,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     max-width: 100%;
     width: 100%;
   }
+.mx-15{
+    margin: 0 1.5rem 0 1.5rem;
+}

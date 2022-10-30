@@ -8,7 +8,12 @@ import { Router } from '@angular/router';
 })
 export class EmpNavbarComponent implements OnInit {
 
-  constructor(private myRouter:Router) { }
+  constructor(private myRouter:Router) { 
+    
+  }
+
+  name = localStorage.getItem('emp_name')
+
   logout=()=>{
     localStorage.clear
     this.myRouter.navigate(["/"])

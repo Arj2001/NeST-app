@@ -41,6 +41,7 @@ export class LoginComponent implements OnInit {
          alert("success") 
          localStorage.setItem("emp_id",resp[0].id)
          console.log(localStorage.getItem("emp_id"));
+         localStorage.setItem('emp_name',resp[0].name)
          this.myRouter.navigate(["/empdash"])
         }
       }
@@ -61,6 +62,7 @@ export class LoginComponent implements OnInit {
         console.log(resp)
          alert("success") 
          localStorage.setItem("sec_id",resp[0].id)
+         localStorage.setItem("sec_name",resp[0].name)
          console.log(localStorage.getItem("sec_id"));
          this.myRouter.navigate(["/security"])
         }

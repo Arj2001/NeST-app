@@ -32,6 +32,7 @@ export class ViewLeaveComponent implements OnInit {
     }
     this.myApi.updateLeaveStatus(data).subscribe()
     alert("Updated successfully")
+    this.setStatus = ""
     this.getLeaveData()
   }
     

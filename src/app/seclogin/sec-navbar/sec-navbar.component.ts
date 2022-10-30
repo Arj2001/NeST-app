@@ -9,6 +9,9 @@ import { Router } from '@angular/router';
 export class SecNavbarComponent implements OnInit {
 
   constructor(private myRouter:Router) { }
+
+  name = localStorage.getItem('sec_name')
+
   logout=()=>{
     localStorage.clear
     this.myRouter.navigate(["/"])
