@@ -1,6 +1,7 @@
 
 <div class="div-center">
-    <h1>Company Login</h1>
+    <div><h1>Company Login</h1></div>
+    
     <mat-card class="example-card" color="accent">
 
 
@@ -12,29 +13,28 @@
 
                     <mat-form-field class="example-full-width mt" appearance="outline">
                         <mat-label>Email</mat-label>
-                        <input type="email" matInput placeholder="Ex. name@email.com">
+                        <input type="email"  matInput name="adminEmail" [(ngModel)]="adminEmail" placeholder="Ex. name@email.com">
                     </mat-form-field>
 
                     <mat-form-field class="example-full-width" appearance="outline">
                         <mat-label>Password</mat-label>
-                        <input matInput type="password" placeholder="Ex. 123456789">
+                        <input matInput name="adminPassword" [(ngModel)]="adminPassword" type="password" placeholder="Ex. 123456789">
                     </mat-form-field>
-                    <button mat-raised-button color="accent">Login</button>
-
+                    <button mat-raised-button color="accent" (click)="onAdminLogin()">Login</button>
                 </mat-tab>
                 <mat-tab label="Employee">
 
 
                     <mat-form-field class="example-full-width mt" appearance="outline">
                         <mat-label>Email</mat-label>
-                        <input type="email" matInput placeholder="Ex. name@email.com">
+                        <input type="email" matInput name="empEmail" [(ngModel)]="empEmail" placeholder="Ex. name@email.com">
                     </mat-form-field>
 
                     <mat-form-field class="example-full-width" appearance="outline">
                         <mat-label>Password</mat-label>
-                        <input matInput type="password" placeholder="Ex. 123456789">
+                        <input matInput name="empPass" [(ngModel)]="empPass" type="password" placeholder="Ex. 123456789">
                     </mat-form-field>
-                    <button mat-raised-button color="accent">Login</button>
+                    <button mat-raised-button color="accent" (click)="onEmpLogin()">Login</button>
 
                 </mat-tab>
                 <mat-tab label="Security">
@@ -42,14 +42,14 @@
 
                     <mat-form-field class="example-full-width mt" appearance="outline">
                         <mat-label>Email</mat-label>
-                        <input type="email" matInput placeholder="Ex. name@email.com">
+                        <input type="email" matInput name="secEmail" [(ngModel)]="secEmail" placeholder="Ex. name@email.com">
                     </mat-form-field>
 
                     <mat-form-field class="example-full-width" appearance="outline">
                         <mat-label>Password</mat-label>
-                        <input matInput type="password" placeholder="Ex. 123456789">
+                        <input matInput name="secPass" [(ngModel)]="secPass" type="password" placeholder="Ex. 123456789">
                     </mat-form-field>
-                    <button mat-raised-button color="accent">Login</button>
+                    <button mat-raised-button color="accent" (click)="onSecLogin()">Login</button>
 
                 </mat-tab>
                 

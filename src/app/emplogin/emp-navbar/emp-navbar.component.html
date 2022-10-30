@@ -1,0 +1,19 @@
+<mat-toolbar color="accent">
+
+    <span>Employee Panel</span>
+    <span class="mx-15">Welcome {{name}}</span>
+
+    <div class="spacer"></div>
+
+    <div class="my-1">
+        <a mat-button routerLink="/empDash">DashBoard</a>
+        <a mat-button routerLink="/applyLeave">Apply Leave</a>
+        <a mat-button routerLink="/leaveStatus">Leave Status</a>
+        <a mat-button routerLink="/viewLogById">View Log</a>
+        <a mat-raised-button  color="warn" (click)="logout()">Logout</a>
+    </div>
+
+
+
+
+</mat-toolbar>
