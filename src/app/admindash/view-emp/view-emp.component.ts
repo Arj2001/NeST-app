@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { ApiService } from '../api.service';
+import { ApiService } from 'src/app/api.service';
 
 @Component({
   selector: 'app-view-emp',

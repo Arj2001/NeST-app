@@ -44,6 +44,10 @@
                     <input type="number" matInput value="{{searchData[0].salary}}" name="salary" [(ngModel)]="searchData[0].salary" placeholder="Ex. name@email.com">
                 </mat-form-field>
                 <mat-form-field class="example-full-width " appearance="outline">
+                    <mat-label>Joining Date</mat-label>
+                    <input type="datetime" matInput value="{{searchData[0].joiningDate}}" name="salary" disabled  placeholder="Ex. name@email.com">
+                </mat-form-field>
+                <mat-form-field class="example-full-width " appearance="outline">
                     <mat-label>Password</mat-label>
                     <input type="password" matInput value="{{searchData[0].password}}" name="password" [(ngModel)]="searchData[0].password" placeholder="Ex. name@email.com">
                 </mat-form-field>
