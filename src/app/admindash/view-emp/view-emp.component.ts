@@ -36,7 +36,7 @@ export class ViewEmpComponent implements OnInit {
     this.getEmpData()
   }
     
-    displayedColumns: string[] = ['name', 'age', 'email', 'address','salary','phone','joiningDate','delete'];
+    displayedColumns: string[] = ['id','name', 'age', 'email', 'address','salary','phone','joiningDate','delete'];
     dataSource :any
   
   ngOnInit(): void {
