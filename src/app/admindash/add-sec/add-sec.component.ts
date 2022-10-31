@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
+import { ApiService } from 'src/app/api.service';
 
 @Component({
-  selector: 'app-admin',
-  templateUrl: './admin.component.html',
-  styleUrls: ['./admin.component.css']
+  selector: 'app-add-sec',
+  templateUrl: './add-sec.component.html',
+  styleUrls: ['./add-sec.component.css']
 })
-export class AdminComponent implements OnInit {
+export class AddSecComponent implements OnInit {
 
   constructor(private myApi:ApiService) { }
 
@@ -17,8 +17,8 @@ export class AdminComponent implements OnInit {
   email = ""
   phone = ""
   password = ""
-  designation = ""
-  onAddEmp = () => {
+  
+  onSecEmp = () => {
     let data = {
       "name": this.name,
       "age": this.age,
@@ -29,12 +29,11 @@ export class AdminComponent implements OnInit {
       "password": this.password,
     }
 
-    this.myApi.addEmp(data).subscribe();
+    this.myApi.addSec(data).subscribe();
     alert("added");
 
 
   }
-
   ngOnInit(): void {
   }
 
